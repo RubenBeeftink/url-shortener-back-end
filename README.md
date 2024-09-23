@@ -1,4 +1,6 @@
 # ShortUrlBackend
+This is an assessment project. I've timeboxed this project to approximately 4 hours for this back-end project.
+
 This application aims to allow users to create shortened urls. The shortened urls then redirect to the origin url.
 
 This project provides a back-end api integration for the front-end part of this application (https://github.com/RubenBeeftink/url-shortener-front-end).
