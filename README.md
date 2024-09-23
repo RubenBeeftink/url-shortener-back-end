@@ -21,6 +21,7 @@ If the short url is expired or not found the application will return a 404 not f
 
 ## Test coverage
 All files added by myself (and not framework scaffolding, such as laravel Sanctum and Laravel fortify) are covered by integration and feature tests.
+
 ![image](https://github.com/user-attachments/assets/a82327cd-d867-4ea5-b1aa-f60f6952d343)
 
 To run the test suite run `php artisan test`. Make sure you create a .env.testing file and fill the `APP_KEY` variable with the value from your .env file.
