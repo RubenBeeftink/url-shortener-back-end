@@ -41,6 +41,10 @@ class ShortUrlStoreRequest extends FormRequest
 
     public function getExpiresAt(): ?Carbon
     {
+        if(is_null($this->input('expires_at'))) {
+            return null;
+        }
+
         return Carbon::parse($this->input('expires_at'));
     }
 }
