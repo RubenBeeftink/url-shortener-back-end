@@ -42,6 +42,15 @@ class ShortUrl extends Model
         return url($this->hash);
     }
 
+    public function isExpired(): bool
+    {
+        if(is_null($this->expires_at)) {
+            return false;
+        }
+
+        return $this->expires_at->isBefore(Carbon::now());
+    }
+
     public function user(): BelongsTo
     {
         return $this->belongsTo(User::class);

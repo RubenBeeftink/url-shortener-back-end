@@ -13,6 +13,10 @@ class RedirectController
     {
         $shortUrl = app(GetShortUrlByHash::class)->execute($hash);
 
+        if($shortUrl->isExpired()) {
+            abort(404);
+        }
+
         return redirect($shortUrl->url);
     }
 }
