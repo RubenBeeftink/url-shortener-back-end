@@ -34,3 +34,5 @@ You can run this project using the built-in Laravel webserver. To do so:
 - run `php artisan key:generate` to generate an app key
 - run `php artisan migrate` to migrate the database
 - run `php artisan serve` to host the application. It runs on `localhost:8000`
+
+- run the front-end project according to the [readme](https://github.com/RubenBeeftink/url-shortener-front-end/blob/main/README.md) in the repository.
