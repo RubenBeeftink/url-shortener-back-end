@@ -30,7 +30,7 @@ To run the test suite run `php artisan test`. Make sure you create a .env.testin
 
 ## Running the project
 You can run this project using the built-in Laravel webserver. To do so:
-
+- clone the project
 - Create a mysql database named `shortener` on your local machine
 - copy the `.env.example` file to `.env`, fill in database credentials according to your settings
 - run `composer install` to install composer dependencies
